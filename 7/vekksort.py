@@ -3,7 +3,6 @@
 # LNDS fra Wikipedia lnds_wiki() (rask)
 
 from math import ceil
-from time import time
 
 def bin_search(arr, left, right, key):
     while right > left + 1:
