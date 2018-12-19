@@ -5,7 +5,7 @@ data = json.loads(open('input.json').read())
 c = md5('julekalender'.encode()).hexdigest()
 p = ''
 
-while len(data) > 0:
+while data:
     for obj in data:
         h = md5(f'{c}{obj["ch"]}'.encode()).hexdigest()
         if h == obj['hash']:
