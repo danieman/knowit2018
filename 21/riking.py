@@ -10,18 +10,6 @@ def is_abundant(n):
 			divisors += i
 	return divisors > n
 
-# primes = [int(line.strip()) for line in open('one-million-primes.txt')]
-
-# i, total = 0, 0
-# while primes[i] < 10**7:
-# 	if primes[i+1] == primes[i] + 2:
-# 		if is_abundant(primes[i] + 1):
-# 			total += (primes[i] + 1)
-# 	i += 1
-
-# print(total)
-
-
 with open('one-million-primes.txt') as f:
 	total = 0
 	prev = int(f.readline())
